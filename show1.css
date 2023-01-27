@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 0;
+}
+.container{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    flex: 1 1 auto;
+}
+.faq-header{
+    font-size: 40px;
+    font-family: 'Signika Negative', sans-serif;
+    color: #2C3E50FF;
+
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+
+}
+.questions{
+    word-break: break-word;
+    font-size:30px;
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(21, 9, 41);
+    line-height: 2rem;
+    padding-bottom: 5px;
+}
+.answers{
+    word-break: break-word;
+    list-style-type: none;
+    font-family:'Signika Negative', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1px;
+    color: rgb(30, 37, 44);
+    font-weight: 400;
+}
+img{
+    height: 15px;
+    cursor: pointer;
+    align-self: center;
+}
+.question__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Wrapper__1{
+    border-bottom: 2px solid rgb(111, 109, 109);
+    cursor: pointer;
+}
+.answer__wrapper{
+    max-height: 0;
+    overflow: hidden;
+}
+button{
+    border: none;
+    background: transparent;
+}
+.active{
+    overflow: visible;
+    max-height: 100px;
+    transition: max-height .6s ease;
+}
+
+
